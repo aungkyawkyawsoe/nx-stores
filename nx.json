@@ -12,7 +12,7 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
         "cacheableOperations": [
           "build",
@@ -20,7 +20,8 @@
           "test",
           "e2e",
           "build-storybook"
-        ]
+        ],
+        "accessToken": "Y2Y0MmUzNDktNTM4Ni00MDk4LWI0MGEtZjFjOTQzNjI3MGYyfHJlYWQtd3JpdGU="
       }
     }
   },
@@ -38,28 +39,36 @@
     },
     "bike-store-e2e": {
       "tags": [],
-      "implicitDependencies": ["bike-store"]
+      "implicitDependencies": [
+        "bike-store"
+      ]
     },
     "blog": {
       "tags": []
     },
     "blog-e2e": {
       "tags": [],
-      "implicitDependencies": ["blog"]
+      "implicitDependencies": [
+        "blog"
+      ]
     },
     "footer": {
       "tags": []
     },
     "footer-e2e": {
       "tags": [],
-      "implicitDependencies": ["footer"]
+      "implicitDependencies": [
+        "footer"
+      ]
     },
     "header": {
       "tags": []
     },
     "header-e2e": {
       "tags": [],
-      "implicitDependencies": ["header"]
+      "implicitDependencies": [
+        "header"
+      ]
     }
   }
 }

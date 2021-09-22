@@ -3,15 +3,16 @@ import styles from './app.module.scss';
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 import { Header } from '@stores/header';
+import { Footer } from '@stores/footer';
 
 export function App() {
   return (
     <div className={styles.app}>
       <Header />
-      
+
       <header className="flex">
         <Logo width="75" height="75" />
-        <h1>Welcome to bike-store!</h1>
+        <h1>Welcome to bike-store - some change!</h1>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
@@ -97,6 +98,8 @@ nx affected:e2e
   `}</pre>
         </details>
       </main>
+
+      <Footer />
     </div>
   );
 }
